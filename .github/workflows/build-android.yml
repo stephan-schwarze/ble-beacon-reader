@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Build Android APK - Updated
 
 on:
   push:
@@ -40,7 +40,7 @@ jobs:
     - name: Build APK
       run: |
         cd android
-        ./gradlew assembleDebug
+        gradle assembleDebug
     
     - name: Upload APK
       uses: actions/upload-artifact@v4
